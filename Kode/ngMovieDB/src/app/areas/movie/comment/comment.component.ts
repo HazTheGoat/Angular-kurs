@@ -5,8 +5,7 @@ import { UserModel } from "../../user/models/user";
 
 @Component({
   selector: "comment",
-  templateUrl: "./comment.component.html",
-  styleUrls: ["./comment.component.css"]
+  templateUrl: "./comment.component.html"
 })
 export class CommentComponent implements OnInit {
   @Input()
