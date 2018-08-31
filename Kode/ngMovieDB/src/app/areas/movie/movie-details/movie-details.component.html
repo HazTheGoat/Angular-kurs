@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <button (click)="handleBack()" class="btn btn-primary my-4">
+        Back to movie list
+      </button>
+    </div>
+    <div class="col-md-4">
+      <div class="movie-poster" [style.backgroundImage]="'url(assets/' + movie.img+ ')'" alt="movie poster"></div>
+    </div>
+    <div class="col-md-8">
+      <h2>{{ movie.title }}</h2>
+      <div class="mb-2">
+        <div class="mb-2">
+            <strong>Description</strong>
+        </div>
+        <p>{{ movie.description }}</p>
+      </div>
+      <div class="mb-2">
+        <div class="mb-2">
+            <strong>Rating</strong>
+        </div>
+        <p> <span class="stars" [ngClass]="'stars-' + movie.rating"></span> </p>
+      </div>
+      <div class="mb-2">
+        <div class="mb-2">
+          <strong>Comments</strong>
+        </div>
+        <comment *ngFor="let comment of comments" [comment]="comment"></comment>
+      </div>
+    </div>
+  </div>
+</div>

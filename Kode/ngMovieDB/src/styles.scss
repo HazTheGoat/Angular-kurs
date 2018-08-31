@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+.stars {
+  width: 98px;
+  display: block;
+  background-image: url('assets/stars.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 16px;
+
+  &.stars-5 {
+    width: 98px;
+  }
+
+  &.stars-4 {
+    width: 80px;
+  }
+
+  &.stars-3 {
+    width: 60px;
+  }
+
+  &.stars-2 {
+    width: 40px;
+  }
+
+  &.stars-1 {
+    width: 20px;
+  }
+}
+
+.movie-poster {
+  height: 400px;
+  background-position: center;
+  background-size: contain;
+  background-color: #eee;
+  background-repeat: no-repeat;
+}
+
+.user-avatar-sm {
+  height: 40px;
+  width: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.blockquote-footer{
+  display: flex;
+  align-items: center;
+
+  &:before {
+    display: none;
+  }
+
+}

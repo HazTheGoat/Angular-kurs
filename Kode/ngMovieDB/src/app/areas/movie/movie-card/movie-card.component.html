@@ -1,0 +1,9 @@
+<div class="card">
+  <img class="card-img-top" [src]="'/assets/' + movie.img" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"> {{ movie.title}} </h5>
+    <span class="stars" [ngClass]="'stars-' + movie.rating"></span>
+    <p class="card-text">  {{ movie.description | truncate:'150' }} </p>
+    <a [routerLink]="['/movie/' + movie.id]" class="btn btn-primary">Go to movie</a>
+  </div>
+</div>
